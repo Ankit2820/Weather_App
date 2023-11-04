@@ -193,7 +193,7 @@ img {
 /*-- Index-Page-Styling --*/
 
 body {
-  background: url("./images/background.jpg");
+  background: url("https://cdn.pixabay.com/photo/2017/06/30/22/12/landscape-2459981_1280.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -234,7 +234,7 @@ h1 {
   width: 60%;
   height: 100%;
   float: left;
-  background: url("./images/city.jpg");
+  background: url("https://images.unsplash.com/photo-1588416936097-41850ab3d86d?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmVuZ2FsdXJ1fGVufDB8fDB8fHww");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
