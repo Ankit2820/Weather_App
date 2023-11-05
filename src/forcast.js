@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Component } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import apiKeys from "./apiKeys";
 import ReactAnimatedWeather from "react-animated-weather";
@@ -26,12 +26,7 @@ function Forcast(props) {
         setError({ message: "Not Found", query: query });
       });
   };
-  function checkTime(i) {
-    if (i < 10) {
-      i = "0" + i;
-    } // add zero in front of numbers < 10
-    return i;
-  }
+  
 
   const defaults = {
     color: "white",
@@ -40,8 +35,9 @@ function Forcast(props) {
   };
 
   useEffect(() => {
-    search("Delhi");
-  }, []);
+    search();
+},[]);
+  
 
   return (
     <div className="forecast">
@@ -66,7 +62,7 @@ function Forcast(props) {
           <div className="img-box">
             {" "}
             <img
-              src="https://images.avishkaar.cc/workflow/newhp/search-white.png"
+              src="https://images.avishkaar.cc/workflow/newhp/search-white.png"alt="we"
               onClick={search}
             />
           </div>
@@ -81,7 +77,7 @@ function Forcast(props) {
                 </p>
                 <img
                   className="temp"
-                  src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}.png`}
+                  src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}.png`}alt="wear"
                 />
               </li>
               <li>
